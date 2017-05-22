@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cuarta Aplicación</title>
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app4.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  
+  <!--Grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones4.js"></script>
+  <script src="phonegap.js"></script>
+
+
+</head>
+<body>
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Datos del Dispositivo</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+  </div>
+  
+  <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Dispositivo</h2> 
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Eventos</h2>
+   </a>
+  </li>
+  </ul>
+</div>
+
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+   <img src="res/android/mdpi4.png" width="46" height="46">
+  </div>
+  <div>
+   <h4>Aplicación Cuatro</h4>
+   <h4>José Antonio Ramírez Franco</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>NOMBRE</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+  <div id="disp">
+   <table width="200" border="1" id="datos" style="color:#FFF" bordercolor="#333333">
+   <tr align="center">
+    <td width="83" bgcolor="#0066FF">Datos</td>
+    <td width="101" bgcolor="#006699">Dispositivo</td>
+   </tr>
+    <tr tr align="center">
+      <td bgcolor="#0066FF">Nombre</td>
+      <td bgcolor="#006699">&nbsp;</td>
+     </tr>
+     <tr tr align="center">
+      <td bgcolor="#0066FF">Phonegap</td>
+      <td bgcolor="#006699">&nbsp;</td>
+     </tr>
+     <tr tr align="center">
+      <td bgcolor="#0066FF">Plataforma</td>
+      <td bgcolor="#006699">&nbsp;</td>
+      </tr>
+      <tr tr align="center">
+        <td bgcolor="#0066FF">Versión</td>
+         <td bgcolor="#006699">&nbsp;</td>
+       </tr>
+       <tr tr align="center">
+        <td  bgcolor="#0066FF">UUID</td>
+         <td bgcolor="#006699">&nbsp;</td>
+       </tr>
+      </table>
+   
+  </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Cuatro, JARF</h4>
+ <p align="center"><img src="res/android/mdpi4.png" width="56" height="46">
+   </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Eventos</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+  <div>
+       <h2>Historia</h2>
+       <ul id="eHistoria">
+       </ul>
+   </div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Cuatro, JARF</h4>
+  <p align="center"><img src="res/android/mdpi4.png" width="56" height="46">
+   </div>
+ </div>  
+    </body>
+</html>
